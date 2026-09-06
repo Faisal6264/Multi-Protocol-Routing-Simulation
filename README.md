@@ -98,3 +98,18 @@ RIP-originated networks were observed as **OSPF E2 external routes** in the OSPF
 * EIGRP
 * Route Redistribution
 * Routing Tables
+
+
+## 📁 Project Structure
+
+```text
+Multi-Protocol-Routing-Simulation/
+├── EIGRP_RIP_OSPF.pkt
+├── README.md
+└── images/
+    ├── Topology.png
+    ├── RIP_router.png
+    ├── OSPF_router.png
+    ├── EIGRP_router.png
+    └── Ping.png
+```
