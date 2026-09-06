@@ -20,7 +20,7 @@ The network was configured and tested using Cisco IOS commands and connectivity 
 
 ## 🌐 Network Topology
 
-![Network Topology](images/network-topology.png)
+![Network Topology](images/Topology.png)
 
 ### Main Transit Networks
 
@@ -51,10 +51,13 @@ The network was configured and tested using Cisco IOS commands and connectivity 
 6. Tested end-to-end connectivity using `ping`.
 
 ### Key Verification Commands
+
+```text
 show ip interface brief
 show ip protocols
 show ip route
 ping <DESTINATION_IP>
+```
 
 ## ✅ Verification
 
@@ -62,20 +65,22 @@ ping <DESTINATION_IP>
 
 `show ip protocols` was used to verify the routing protocols and redistribution configured on Router4.
 
-![Router4 Routing Protocols](images/router4-show-ip-protocols.png)
+![Router4 Routing Protocols](images/EIGRP_router.png)
 
-### Router12 — OSPF External Routes
+### Router6 — OSPF External Routes
 
 RIP-originated networks were observed as **OSPF E2 external routes** in the OSPF routing domain.
 
-![Router12 Routing Table](images/router12-routing-table.png)
+![Router6 Routing Table](images/OSPF_router.png)
 
 ### Connectivity Test
 
 `ping` was used to verify communication between devices across different routing domains.
 
+![Connectivity Test](images/Ping.png)
 
 ## 📚 What I Learned
+
 * Working with RIP, OSPF, and EIGRP.
 * Configuring route redistribution between routing protocols.
 * Reading and interpreting routing tables.
@@ -83,6 +88,7 @@ RIP-originated networks were observed as **OSPF E2 external routes** in the OSPF
 * Testing network connectivity using `ping`.
 
 ## 🛠️ Technologies & Skills
+
 * Cisco Packet Tracer
 * Cisco IOS
 * Computer Networking
@@ -92,5 +98,3 @@ RIP-originated networks were observed as **OSPF E2 external routes** in the OSPF
 * EIGRP
 * Route Redistribution
 * Routing Tables
-
-
